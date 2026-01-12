@@ -1,18 +1,32 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/install.sh",
-      "headers": {
-        "Content-Type": "text/plain; charset=utf-8"
-      }
+      "source": "/i",
+      "destination": "/install.sh"
     },
     {
-      "src": "/install",
-      "dest": "/install.sh",
-      "headers": {
-        "Content-Type": "text/plain; charset=utf-8"
-      }
+      "source": "/install",
+      "destination": "/install.sh"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/i",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/install",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/install.sh",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
     }
   ]
 }
