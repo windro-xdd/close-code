@@ -544,7 +544,7 @@
           </div>
           <div class="install-body">
             <code class="install-command">
-              <span class="prompt">$</span> curl -fsSL close-code.vercel.app/i | bash
+              <span class="prompt">$</span> curl -fsSL raw.githubusercontent.com/windro-xdd/close-code/master/install.sh | bash
             </code>
             <button class="copy-btn" onclick="copyInstall(this)">Copy</button>
           </div>
@@ -668,7 +668,7 @@
 
     // Copy install command
     function copyInstall(btn) {
-      const command = 'curl -fsSL close-code.vercel.app/i | bash';
+      const command = 'curl -fsSL raw.githubusercontent.com/windro-xdd/close-code/master/install.sh | bash';
       navigator.clipboard.writeText(command).then(() => {
         btn.textContent = 'Copied!';
         btn.classList.add('copied');
