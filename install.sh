@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# CloseCode Installer - v1.0.1
 set -euo pipefail
 APP=closedcode
 
